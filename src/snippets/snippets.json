@@ -8,6 +8,26 @@
       "---"
     ]
   },
+    "Shortcut image section": {
+    "prefix": "img:section",
+    "description": "Shortcut for image tag with section id",
+    "body": ["{% if section.settings.${2:id} != blank %}", "\t<img class='${1:class}' src='{{ section.settings.${2:id} | img_url: '${3:size}x' }}' alt='{{ section.settings.${2:id}.alt | escape }}'>", "{% endif %}"]
+  }, 
+    "Shortcut image block": {
+    "prefix": "img:block",
+    "description": "Shortcut for image tag with block id",
+    "body": ["{% if block.settings.${2:id} != blank %}", "\t<img class='${1:class}' src='{{ block.settings.${2:id} | img_url: '${3:size}x' }}' lt='{{ block.settings.${2:id}.alt | escape }}'>", "{% endif %}"]
+  }, 
+    "Shortcut section.settings": {
+    "prefix": "ss",
+    "description": "Shortcut for section.settings.id",
+    "body": ["{{ section.settings.${1:id} }}"]
+  },
+    "Short block.settings": {
+    "prefix": "bs",
+    "description": "Shortcut for block.settings.id",
+    "body": ["{{ block.settings.${1:id} }}"]
+  },
   "Tag if": {
     "prefix": "if",
     "description": "Control flow tag: if",
