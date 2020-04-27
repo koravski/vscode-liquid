@@ -16,7 +16,7 @@
     "Shortcut image block": {
     "prefix": "img:block",
     "description": "Shortcut for image tag with block id",
-    "body": ["{% if block.settings.${2:id} != blank %}", "\t<img class='${1:class}' src='{{ block.settings.${2:id} | img_url: '${3:size}x' }}' lt='{{ block.settings.${2:id}.alt | escape }}'>", "{% endif %}"]
+    "body": ["{% if block.settings.${2:id} != blank %}", "\t<img class='${1:class}' src='{{ block.settings.${2:id} | img_url: '${3:size}x' }}' alt='{{ block.settings.${2:id}.alt | escape }}'>", "{% endif %}"]
   }, 
     "Shortcut section.settings": {
     "prefix": "ss",
