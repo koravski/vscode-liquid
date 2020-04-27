@@ -23,7 +23,7 @@ TBA
 ```
 {{ section.settings.id }}
 ```
-* sb
+* bs
 ```
 {{ block.settings.id }}
 ```
