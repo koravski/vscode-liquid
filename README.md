@@ -1,7 +1,7 @@
 Fork of [Liquid language support for VS Code](https://github.com/panoply/vscode-liquid)
 
 ### New
-* new shortcut property
+* shortcut property
 
 ### How to install
 TBA
@@ -20,6 +20,10 @@ TBA
  {% endif %}
 ```
 * ss
-`{{ section.settings.id }}`
+```
+{{ section.settings.id }}
+```
 * sb
-`{{ block.settings.id }}`
+```
+{{ block.settings.id }}
+```
